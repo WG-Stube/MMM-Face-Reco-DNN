@@ -3,32 +3,32 @@
 ## Manuelle Installation
 
 1. OpenCV herunterladen und installieren (dauert mehrere Minuten)
-`wget https://github.com/cyysky/OpenCV-4.1.2-for-Raspbian/raw/master/opencv_4.1.2-1_armhf.deb`
-`sudo dpkg -i opencv_4.1.2-1_armhf.deb`
-`sudo apt-get -f install`
-`sudo dpkg -i opencv_4.1.2-1_armhf.deb`
+- `wget https://github.com/cyysky/OpenCV-4.1.2-for-Raspbian/raw/master/opencv_4.1.2-1_armhf.deb`
+- `sudo dpkg -i opencv_4.1.2-1_armhf.deb`
+- `sudo apt-get -f install`
+- `sudo dpkg -i opencv_4.1.2-1_armhf.deb`
 
 2. DLib installieren
-    `pip3 install dlib`
+`pip3 install dlib`
 
 3. Gesichtserkennung installieren
-    `pip3 install face_recognition`
+`pip3 install face_recognition`
  
  4. imutils installieren
-    `pip3 install imutils`
+`pip3 install imutils`
     
 5. numpy installieren
-    `pip3 install numpy`
+`pip3 install numpy`
 
 6. libtesserac4 installieren
-    `sudo apt install libtesseract4`
+`sudo apt install libtesseract4`
   
- 7. MagicMirror Erweiterung installieren
-`cd ~/MagicMirror/modules/`
-`git clone https://github.com/nischi/MMM-Face-Reco-DNN.git`
-`cd MMM-Face-Reco-DNN`
-`npm install`
-`mkdir dataset`
+7. MagicMirror Erweiterung installieren
+- `cd ~/MagicMirror/modules/`
+- `git clone https://github.com/nischi/MMM-Face-Reco-DNN.git`
+- `cd MMM-Face-Reco-DNN`
+- `npm install`
+- `mkdir dataset`
 
 8. Datenset für Gesichter erstellen
 - "Dateien" öffnen auf dem Computer
@@ -42,8 +42,8 @@
 - `exit`
 
 9. Gesichter für die Erkennung vorbereiten (dauert einige Minuten)
- `cd tools`
-`python3 encode.py -i ../dataset/ -e encodings.pickle -d hog`
+- `cd tools`
+- `python3 encode.py -i ../dataset/ -e encodings.pickle -d hog`
 
 10. Modul einrichten
  `nano ~/MagicMirror/config/config.js`
