@@ -117,4 +117,11 @@ Bei allen Modulen die nur für einen bestimmten Benutzer angezeigt werden sollen
 `classes: 'nathanael',`
 
 Es können auch mehrere Klassen angegeben werden z.B `classes: 'nathanael peter',`
+
+
+12. Nano schliessen mit `CTRL+O` und `CTRL+X`
+
+13. Mirror starten zum testen 
+- `cd ~/MagicMirror`
+- `npm run start`
  
